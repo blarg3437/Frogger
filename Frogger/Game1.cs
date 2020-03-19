@@ -23,8 +23,8 @@ namespace Frogger
         SpriteBatch spriteBatch;
         GamePlayState gamep;
         MapSelectorState mapsel;
-        public static int screenWidth = 1920;
-        public static int screenHeight = 1024;
+        public static int screenWidth = 480;
+        public static int screenHeight = 480;
 
         public Game1()
         {

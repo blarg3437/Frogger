@@ -9,7 +9,7 @@ namespace Frogger.Enemies
 {
     abstract class Enemy : Entity
     {
-        public Enemy(int x, int y):base(x,y)
+        public Enemy(int x, int y,int size = 1):base(x,y, size)
         {
 
         }

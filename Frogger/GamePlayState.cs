@@ -19,7 +19,7 @@ namespace Frogger
         Controller control;
         Player play;
         Camera camcam;
-        public static int resolution = 128;
+        public static int resolution = 64;
 
         public void Initialize()
         {

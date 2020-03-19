@@ -23,6 +23,7 @@ namespace Frogger.Levels
             entitiesOnMap.Add(new Enemies.Bug(2, 4));
             entitiesOnMap.Add(new Enemies.Bug(0, 1));
             entitiesOnMap.Add(new Enemies.Bug(4, 6));
+            entitiesOnMap.Add(new Enemies.Bus(7, 3));
 
             //next, you should encode values into this here dictonary!
         }

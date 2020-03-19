@@ -94,17 +94,24 @@ namespace Frogger.Levels
             //then draw the coords * resolution
 
             foreach (Entity item in entitiesOnMap)
-            {
-               
+            {             
                 //anything that made it this far is within the camera's field of view, and can be drawn
+                
+                  for (int i = 0; i < item.getSize(); i++)
+			    {	
                 sb.Draw(moveableSprites, new Rectangle(
-                    ((int)item.posX - (int)camera.Cx) * res,
+                    ((int)item.posX - (int)camera.Cx - i) * res,
                     ((int)item.posY - (int)camera.Cy) * res,
                     res, res),
                     TextureAtlas[item.textureID],
                     Color.White);
+                    
+                }
                 
             }
+
+           
+
         }
 
         public virtual void UpdateStuff(GameTime gt)

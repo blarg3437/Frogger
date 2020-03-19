@@ -12,18 +12,19 @@ namespace Frogger
     {
         public float posX { get; protected set; }
         public float posY { get; protected set; }
-
+        
         public int textureID { get; protected set; }//this value will be the dictonary key for the texture atlas
         public int rotation { get; protected set; }
         public float speed { get; protected set; }
-       
+       protected int size;
+        public int getSize() { return size; }
 
-        public Entity( int x = 0, int y = 0 )
+        public Entity( int x = 0, int y = 0, int size = 1)
         {
             posX = x;
             posY = y;
             speed = 10;
-            
+         this.size = size;
         }
         public bool moveUnit(float x, float y)
         {
@@ -45,7 +46,7 @@ namespace Frogger
         
         public void drawEntity(SpriteBatch sb)
         {
-            
+          
         }
 
         //this method will contain commands on how the entity should randomly move

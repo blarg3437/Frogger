@@ -9,11 +9,10 @@ namespace Frogger.Enemies
 {
     class MultiTileEnemy : Enemy
     {
-        protected int size;
-        public int getSize() { return size; }
-        public MultiTileEnemy(int x, int y, int size):base(x,y)
+        
+        public MultiTileEnemy(int x, int y, int size):base(x,y,size)
         {
-            this.size = size;
+            
         }
         public override void defaultMove(GameTime gt)
         {

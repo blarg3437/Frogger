@@ -42,6 +42,18 @@ namespace Frogger
             
             
         }
+
+        public void addMultiTileEnemy(Enemies.MultiTileEnemy mte)
+            {
+            for (int i = 0; i < mte.getSize(); i++)
+			{
+                //inside of here add some if statements to determine the direction the loop should go in
+                _moveableObjects[(int)mte.posX + i,(int)mte.posY] = mte.textureID;
+			}
+
+}
+
+          
         public void randomizeTerrain()
         {
             Random rand = new Random();
