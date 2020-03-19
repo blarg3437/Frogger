@@ -69,9 +69,9 @@ namespace Frogger.Levels
              *this will almost act as a viewing matrix, taking the Camera's field of view,
              * and drawing everthing between it
              * */
-            for (int x = (int)camera.Cx; x < camera.Cx + camera.CGWidth; x++)
+            for (int x = (int)camera.Cx; x < camera.Cx + camera.CGWidth + 1; x++)
             {
-                for (int y = (int)camera.Cy; y < camera.Cy + camera.CgHeight; y++)
+                for (int y = (int)camera.Cy; y < camera.Cy + camera.CgHeight + 1; y++)
                 {
                     //here I have the option to hardcode values, or hard...code them into a dictionary?
 
