@@ -23,13 +23,13 @@ namespace Frogger.Levels
         protected Dictionary<int, Rectangle> TextureAtlas;//for multitiles just specify alarger source rectangle
         public int getMapXDim() { return currentmap.terrainwidth; }
         public int getMapYDim() { return currentmap.terrainHeight; }
-
+        
 
         public Level(Player play, Camera cam)
         {
             player = play;
             camera = cam;
-            res = GamePlayState.resolution;
+            res = Game1.resolution;
             TextureAtlas = new Dictionary<int, Rectangle>();
             setTexAtlas(); //call in init?
         }
@@ -69,9 +69,9 @@ namespace Frogger.Levels
              *this will almost act as a viewing matrix, taking the Camera's field of view,
              * and drawing everthing between it
              * */
-            for (int x = (int)camera.Cx; x < camera.Cx + camera.CGWidth + 1; x++)
+            for (int x = (int)camera.Cx; x < camera.Cx + camera.CGWidth; x++)
             {
-                for (int y = (int)camera.Cy; y < camera.Cy + camera.CgHeight + 1; y++)
+                for (int y = (int)camera.Cy; y < camera.Cy + camera.CgHeight; y++)
                 {
                     //here I have the option to hardcode values, or hard...code them into a dictionary?
 
@@ -86,6 +86,7 @@ namespace Frogger.Levels
 
                 }
             }
+            
         }
 
         protected virtual void DrawEntities(SpriteBatch sb)

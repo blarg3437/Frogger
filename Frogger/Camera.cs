@@ -22,8 +22,8 @@ namespace Frogger
         {
             Cx = Startx;
             Cy = StartY;
-            CGWidth = Cwidth / GamePlayState.resolution;
-            CgHeight = Cheight / GamePlayState.resolution;
+            CGWidth = 1 + Cwidth / Game1.resolution;
+            CgHeight = 1 + Cheight / Game1.resolution;
         }
 
         public void setCY(float amount)
