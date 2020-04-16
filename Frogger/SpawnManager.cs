@@ -8,5 +8,8 @@ namespace Frogger
 {
     class SpawnManager
     {
+        //this class should be responsible for spawning the moving enemies
+
+
     }
 }

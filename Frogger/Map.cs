@@ -65,14 +65,14 @@ namespace Frogger
                 }
             }
         }
-        public void addHorizontalRoad()
+        public void addHorizontalRoad(int ystart, int roadThickness=3)
         {
-            for (int i = 0; i < terrainwidth; i++)
+            for (int j = ystart; j < ystart+roadThickness; j++)
             {
-                _terrainData[i, terrainHeight / 2] = 4;
-                _terrainData[i, (terrainHeight / 2) + 1] = 4;
-                _terrainData[i, (terrainHeight / 2) + 2] = 4;
-                _terrainData[i, (terrainHeight / 2) + 3] = 4;
+                for (int i = 0; i < terrainwidth; i++)
+                {
+                    _terrainData[i, j] = 4;
+                }
             }
         }
 

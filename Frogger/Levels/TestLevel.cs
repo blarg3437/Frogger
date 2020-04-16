@@ -51,7 +51,7 @@ namespace Frogger.Levels
             currentmap = new Map(mapSize, mapSize);
             currentmap.setTerrainMap(new int[mapSize, mapSize]);
             currentmap.randomizeTerrain();
-            currentmap.addHorizontalRoad();
+            currentmap.addHorizontalRoad(6); 
             /*
             currentmap.setTerrainMap(new int[7, 7]
             {{0,0,0,0,0,0,0},
